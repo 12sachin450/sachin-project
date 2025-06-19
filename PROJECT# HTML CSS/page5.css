@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.top{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#head{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+   
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    list-style-type: none;
+   margin-left: 100px;
+    margin-top: 10px;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    
+}
+a:hover{
+   color: rgb(2, 158, 158);
+}
+.topic1{
+    text-align: center;
+    margin-top: 50px;
+}
+.offer{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.offer2{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 100px;
+   margin-left: 150px;
+   margin-right: 100px;
+}
+button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    
+}
+button:hover{
+    background-color: rgb(252, 226, 142);
+    color: black;
+    border: none;
+}
+footer{
+    background-color: rgb(169, 253, 246);
+    padding: 20px;
+}
+.p2{
+    margin-left: 250px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.p2{
+    margin-left: 50px;
+}
+input{
+    text-decoration: none;
+    margin-top: 0px;
+    
+}

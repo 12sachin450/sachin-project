@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <h2><i class="fa-solid fa-mug-saucer fa-bounce" style="color: #ffe600;"></i>COFFEE</h2>
+        <ul>
+            <li><a href="page2.html">About us</a></li>
+            <li><a href="Register.html">sign in</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+   <video autoplay loop muted plays-inline >
+           <source src="back video.mp4">
+   </video>
+   <div class="login">
+    <div class="logo">
+    <img src="logo.webp" alt="" height="100px"></div>
+    <div class="head">
+    <h1>LOGIN </h1>
+    </div>
+   <div class="login1">
+    <input type="text" placeholder="User Name" required id="n1"></div>
+    <div class="login2">
+        <input type="email" placeholder="enter your email" required id="n2">
+    </div>
+    <div class="login3">
+    <input type="password" placeholder=" Enter password" required id="n3">
+   </div>
+   <div class="button">
+    <button onclick="detail()">GET STARTED</button>
+   </div>
+   <div class="checkbox">
+    <div>
+   <input type="checkbox" >
+   <label for="">Keep logged in</label></div>
+   <div>
+    <label for="">forged password?</label>
+   </div>
+   </div>
+   <div class="create">
+    <h5><a href="Register.html">CREATE ACCONUNT</a></h5>
+    <h5>HELP NEED</h5>
+   </div>
+   </div>
+   <footer>
+    <div class="foot">
+       <div class="a"><p><a href="page2.html">About us</a></p></div><br>
+       <div class="b"><p><a href="">Privacy policy</a></p></div><br>
+      <div class="c"><p><a href="">Team of use</a></p></div>
+    </div>
+    
+   </footer>
+   <script>
+    function detail(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+        var c=document.getElementById("n3").value;
+        alpha = /^[A-Za-z]+$/;
+        email = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+        pass = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+       
+        if(!alpha.test(a)){
+            alert("incorrect name");
+        }
+        else if(!email.test(b)){
+            alert("incorrect email");
+        }
+        else if(!pass.test(c)){
+            alert("incorrect password");
+        }
+        else{
+           window.location="page1.html"
+        }
+       
+    }
+</script>
+</body>
+</html>
